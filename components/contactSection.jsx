@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 
 // https://formspree.io/f/xeqbqlnv
 

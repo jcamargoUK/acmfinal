@@ -1,6 +1,9 @@
+import ContactSection from "./contactSection"
+
 export default function Button() {
   return (
     <button 
+        onClick={() => ContactSection()}
           className='
             text-4xl
             bg-blue-900

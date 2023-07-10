@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import Button from '../components/button'
-
+import Link from 'next/link'
 
 export default function SectionOne() {
   return (
@@ -24,7 +24,8 @@ export default function SectionOne() {
           '>
           We take asbestos seriously, so you don't have to.</h3>
         < Button />
-        <p className=' text-xl text-gray-600 px-2'>We take pride in being the first point of contact when it comes to asbestos.</p>
+        <p 
+        className=' text-xl text-gray-600 px-2'>We take pride in being the first point of contact when it comes to asbestos.</p>
         <p className=' text-xl text-gray-600 px-2'>Our goal is to provide our clients with the peace of mind that comes with knowing their property is complying with regulations or free from asbestos-containing material.</p>
         < Image 
           className=' 
