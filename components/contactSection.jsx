@@ -58,17 +58,41 @@ export default function ContactSection() {
           'Thank you, your message has been submitted.',
         );
       })
-      // .catch((error) => {
-      //   handleServerResponse(false, error.response.data.error);
-      // });
+      .catch((error) => {
+        handleServerResponse(false, error.response.data.error);
+      });
   };
   return (
-    <main>
-      <h1>React and Formspree</h1>
-      <hr />
-      <form onSubmit={handleOnSubmit}>
-        <label htmlFor="email">Email</label>
+    <main 
+      className=' 
+      flex 
+      flex-col 
+      m-auto 
+      text-center
+      border-2
+      mx-4
+      rounded-xl'>
+      <h1 className=' flex m-auto text-2xl text-gray-600 '>Get in Touch</h1>
+      <form 
+        className=' flex flex-col p-2 pt-4'
+        onSubmit={handleOnSubmit}>
+        <label 
+          className=' 
+          flex 
+          m-auto 
+          text-xl
+           text-gray-600
+           mb-2'
+          htmlFor="email">Email</label>
         <input
+          className=' 
+          border-2 
+          w-3/4 
+          flex 
+          m-auto 
+          p-1 
+          rounded-lg
+          mb-6'
           id="email"
           type="email"
           name="_replyto"
@@ -76,15 +100,30 @@ export default function ContactSection() {
           required
           value={inputs.email}
         />
-        <label htmlFor="message">Message</label>
+        <label 
+          className=' flex m-auto text-xl text-gray-600 mb-2'
+          htmlFor="message">Message</label>
         <textarea
+          className=' border-2 w-3/4 flex m-auto p-1 rounded-lg pb-16 mb-6'
           id="message"
           name="message"
           onChange={handleOnChange}
           required
           value={inputs.message}
         />
-        <button type="submit" disabled={status.submitting}>
+        <button 
+          className=' 
+            text-xl 
+            w-3/4 
+            m-auto  
+            font-bold
+           text-white
+           bg-blue-500 
+           rounded-lg 
+           p-2
+           hover:bg-blue-700'
+          type="submit" 
+          disabled={status.submitting}>
           {!status.submitting
             ? !status.submitted
               ? 'Submit'

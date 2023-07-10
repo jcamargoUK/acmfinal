@@ -1,7 +1,6 @@
 "use client"
 
 import Image from 'next/image'
-import Button from '../components/button'
 
 
 export default function SectionTwo() {
@@ -23,7 +22,6 @@ export default function SectionTwo() {
           width="300"
           height="300"
           />
-      < Button />
     </section>
   )
 }
