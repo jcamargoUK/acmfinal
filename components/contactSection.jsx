@@ -12,6 +12,7 @@ export default function ContactSection() {
     info: { error: false, msg: null },
   });
   const [inputs, setInputs] = useState({
+    name: '',
     email: '',
     message: '',
   });
@@ -23,6 +24,7 @@ export default function ContactSection() {
         info: { error: false, msg: msg },
       });
       setInputs({
+        name: '',
         email: '',
         message: '',
       });
@@ -65,17 +67,45 @@ export default function ContactSection() {
   return (
     <main 
       className=' 
+      bg-gray-600/10
       flex 
       flex-col 
       m-auto 
       text-center
-      border-2
       mx-4
-      rounded-xl'>
-      <h1 className=' flex m-auto text-2xl text-gray-600 '>Get in Touch</h1>
+      mt-12
+      rounded-xl
+      shadow-lg
+      shadow-blue-400
+      '>
+      <h1 className=' flex m-auto text-4xl font-bold mt-6 mb-4 text-gray-600 '>Get in Touch</h1>
       <form 
         className=' flex flex-col p-2 pt-4'
         onSubmit={handleOnSubmit}>
+          <label 
+          className=' 
+          flex 
+          m-auto 
+          text-xl
+           text-gray-600
+           mb-2'
+          htmlFor="name">Name</label>
+        <input
+          className=' 
+          border-2 
+          w-5/6 
+          flex 
+          m-auto 
+          p-1 
+          rounded-lg
+          mb-6'
+          id="name"
+          type="name"
+          name="name"
+          onChange={handleOnChange}
+          required
+          value={inputs.name}
+        />
         <label 
           className=' 
           flex 
@@ -87,7 +117,7 @@ export default function ContactSection() {
         <input
           className=' 
           border-2 
-          w-3/4 
+          w-5/6 
           flex 
           m-auto 
           p-1 
@@ -104,7 +134,7 @@ export default function ContactSection() {
           className=' flex m-auto text-xl text-gray-600 mb-2'
           htmlFor="message">Message</label>
         <textarea
-          className=' border-2 w-3/4 flex m-auto p-1 rounded-lg pb-16 mb-6'
+          className=' border-2 w-5/6 flex m-auto p-1 rounded-lg pb-16 mb-6'
           id="message"
           name="message"
           onChange={handleOnChange}
@@ -114,14 +144,18 @@ export default function ContactSection() {
         <button 
           className=' 
             text-xl 
-            w-3/4 
-            m-auto  
+            w-5/6 
+            m-auto 
+            mb-6 
             font-bold
            text-white
            bg-blue-500 
            rounded-lg 
            p-2
-           hover:bg-blue-700'
+           hover:bg-blue-700
+           shadow-lg
+           shadow-blue-400'
+           
           type="submit" 
           disabled={status.submitting}>
           {!status.submitting

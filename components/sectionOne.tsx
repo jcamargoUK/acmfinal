@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function SectionOne() {
   return (
     <div className=' flex m-auto p-2'>
-      <section >
+      <section>
         <Image 
           className=' m-auto'
           src="/logo.svg" 

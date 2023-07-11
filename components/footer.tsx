@@ -8,15 +8,16 @@ export default function Footer() {
   return(
     <section
     className=' 
+      bg-red-400/40
+      shadow-lg
+      shadow-red-600/50
       flex 
       flex-col 
       m-auto 
       text-center
-      border-2
-      mx-4
-      rounded-xl
+      mb-12
       py-4
-      mt-9'
+      mt-12'
     >
      <h1 className=' flex m-auto text-2xl text-gray-600 '> Follow Us!</h1>
      <div className=' flex m-auto text-2xl text-gray-600 space-x-10 mt-6 '>
@@ -35,8 +36,8 @@ export default function Footer() {
       <p>3rd Floor 86-90 Paul Street</p>
       <p>London</p> 
       <p>EC2A 4NE</p>
-      <p>020 36330991</p>
-      <p>07340111814</p>
+      <p><a href='tel: 02036330991'>02036330991</a></p>
+      <p><a href='tel: 07340111814'>07340111814</a></p>
      </div>
     </section>
   )

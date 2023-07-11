@@ -8,7 +8,7 @@ import Footer from '../../components/footer'
 
 export default function Home() {
   return(
-    <div>
+    <div className='bg-orange-100/40'>
       < SectionOne />
       < SectionTwo />
       < ContactSection />

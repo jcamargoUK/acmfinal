@@ -1,11 +1,10 @@
-import ContactSection from "./contactSection"
 
 export default function Button() {
   return (
     <button 
-        onClick={() => ContactSection()}
+        
           className='
-            text-4xl
+            text-2xl
             bg-blue-900
             text-white
             px-6
@@ -17,9 +16,12 @@ export default function Button() {
             mb-6
             hover:bg-blue-400
             border-2
-            hover:transition hover:duration-700 hover:tracking-wide hover:text-5xl
+            hover:transition 
+            hover:duration-700
+            hover:ease-in-out
+            hover:text-gray-600
             '>
-            Get in Touch
-        </button>
+            <a href="tel: 07340111814">Call Us!</a>
+      </button>
   )
 }
