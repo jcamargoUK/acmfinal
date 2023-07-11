@@ -10,12 +10,12 @@ export default function Footer() {
     className=' 
       bg-red-400/40
       shadow-lg
-      shadow-red-600/50
+      shadow-red-600/90
       flex 
       flex-col 
       m-auto 
       text-center
-      mb-12
+      mb-1
       py-4
       mt-12'
     >

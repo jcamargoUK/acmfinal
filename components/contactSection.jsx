@@ -67,7 +67,7 @@ export default function ContactSection() {
   return (
     <main 
       className=' 
-      bg-gray-600/10
+      bg-lime-700/60
       flex 
       flex-col 
       m-auto 
@@ -76,11 +76,24 @@ export default function ContactSection() {
       mt-12
       rounded-xl
       shadow-lg
-      shadow-blue-400
+      shadow-lime-700
+      md:w-1/2
+      md:m-auto
+      md:mt-16
       '>
-      <h1 className=' flex m-auto text-4xl font-bold mt-6 mb-4 text-gray-600 '>Get in Touch</h1>
+      <h1 
+        className=' 
+          flex 
+          m-auto 
+          text-4xl 
+          font-bold 
+          mt-6 mb-4 
+          text-gray-600 
+          '>
+            Get in Touch
+      </h1>
       <form 
-        className=' flex flex-col p-2 pt-4'
+        className=' flex flex-col p-2 pt-4 md:text-2xl'
         onSubmit={handleOnSubmit}>
           <label 
           className=' 
@@ -88,10 +101,15 @@ export default function ContactSection() {
           m-auto 
           text-xl
            text-gray-600
-           mb-2'
+           mb-2
+           md:text-2xl'
           htmlFor="name">Name</label>
+
         <input
           className=' 
+          bg-gray-300
+          text-gray-600
+          text-center
           border-2 
           w-5/6 
           flex 
@@ -112,10 +130,14 @@ export default function ContactSection() {
           m-auto 
           text-xl
            text-gray-600
-           mb-2'
+           mb-2
+           md:text-2xl'
           htmlFor="email">Email</label>
         <input
           className=' 
+          bg-gray-300
+          text-gray-600
+          text-center
           border-2 
           w-5/6 
           flex 
@@ -131,10 +153,21 @@ export default function ContactSection() {
           value={inputs.email}
         />
         <label 
-          className=' flex m-auto text-xl text-gray-600 mb-2'
+          className=' flex m-auto text-xl text-gray-600 mb-2 md:text-2xl'
           htmlFor="message">Message</label>
         <textarea
-          className=' border-2 w-5/6 flex m-auto p-1 rounded-lg pb-16 mb-6'
+          className=' 
+            bg-gray-300
+            text-gray-600
+            text-left
+            border-2 
+            w-5/6 
+            flex 
+            m-auto 
+            p-1 
+            rounded-lg 
+            pb-16 
+            mb-6'
           id="message"
           name="message"
           onChange={handleOnChange}
