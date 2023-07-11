@@ -28,7 +28,7 @@ export default function SectionOne() {
           md:pt-12
           md:pb-12
           '>
-          We take asbestos seriously, so you don't have to.</h3>
+          We take asbestos seriously, so you don&apos;t have to.</h3>
         < Button />
         <p 
         className=' 
