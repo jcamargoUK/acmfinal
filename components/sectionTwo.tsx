@@ -20,6 +20,7 @@ export default function SectionTwo() {
       md:leading-10
       '> We understand that asbestos can pose a serious health risk and it is important to ensure that it is properly managed or removed from any property.
       </p>
+      
       < Image 
           className=' 
             m-auto

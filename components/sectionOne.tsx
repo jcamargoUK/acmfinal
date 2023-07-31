@@ -49,6 +49,23 @@ export default function SectionOne() {
           md:px-8
           md:leading-10
           '>Our goal is to provide our clients with the peace of mind that comes with knowing their property is complying with regulations or free from asbestos-containing material.</p>
+          <p className=' 
+          text-xl 
+          text-gray-600 
+          px-2
+          md:text-3xl
+          md:px-8
+          md:leading-10
+          '>From initial inspection to final removal, we apply meticulous attention to detail and advanced techniques.</p>
+          <p className=' 
+          text-xl 
+          text-gray-600 
+          px-2
+          md:text-3xl
+          md:px-8
+          md:leading-10
+          '>Trust us as your strategic partner, dedicated to the safety of your property and its occupants, a commitment underpinned by our pursuit of excellence.
+          </p>
         < Image 
           className=' 
             m-auto
