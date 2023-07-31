@@ -3,7 +3,17 @@
 const OurCommitment = () => {
   return(
     <section className='m-auto text-center'>
-      <h1 className=' text-5xl pt-6 pb-6 font-semibold text-blue-900 md:text-6xl'>Our Commitment</h1>
+      <h1 className=' 
+          text-4xl 
+        text-blue-900
+          font-medium 
+          text-center 
+          pt-6 
+          pb-6 
+          md:text-6xl
+          md:pt-12
+          md:pb-12
+          '>Our Commitment</h1>
       <p className='text-xl text-gray-600 px-2 text-left
       md:text-3xl
       md:px-8

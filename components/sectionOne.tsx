@@ -1,7 +1,8 @@
 "use client"
 import Image from 'next/image'
-import Button from '../components/button'
 import Link from 'next/link'
+import { ImMobile } from 'react-icons/im'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 
 export default function SectionOne() {
   return (
@@ -29,7 +30,10 @@ export default function SectionOne() {
           md:pb-12
           '>
           We take asbestos seriously, so you don&apos;t have to.</h3>
-        < Button />
+        <div className='flex flex-col text-center w-[100%] '>
+        <p className='m-auto text-xl text-gray-600 flex gap-5 pb-2'><BsFillTelephoneFill /><a href='tel: 02036330991'>02036330991</a></p>
+        <p className='m-auto text-xl text-gray-600 flex gap-4 pb-4'><ImMobile /><a href='tel: 07340111814'>07340111814</a></p>
+        </div>
         <p 
         className=' 
           text-xl 

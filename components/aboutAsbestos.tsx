@@ -3,7 +3,17 @@
 const AboutAsbestos = () => {
   return(
     <section className='m-auto text-center'>
-      <h1 className=' text-5xl pt-6 pb-6 font-semibold text-blue-900 md:text-6xl'>About Asbestos</h1>
+      <h1 className=' 
+          text-4xl 
+        text-blue-900
+          font-medium 
+          text-center 
+          pt-6 
+          pb-6 
+          md:text-6xl
+          md:pt-12
+          md:pb-12
+          '>About Asbestos</h1>
       <section>
       <div>
             <h2 className='text-gray-600 text-3xl pb-4 pt-6'>What is Asbestos?</h2>
