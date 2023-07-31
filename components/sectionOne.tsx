@@ -1,11 +1,14 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { ImMobile } from 'react-icons/im';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 
-export default function SectionOne() {
+interface SectionOneProps {
+  // Add any props if needed
+}
+
+const SectionOne: React.FC<SectionOneProps> = () => {
   const [showFullContent, setShowFullContent] = useState(false);
 
   const toggleContent = () => {
@@ -14,11 +17,11 @@ export default function SectionOne() {
 
   const firstParagraph = (
     <>
-      <p className='text-xl text-gray-600 px-2 md:text-3xl md:px-8 md:leading-10'>
-        We take pride in being the first point of contact when it comes to asbestos.
-      </p>
-      <p className='text-xl text-gray-600 px-2 md:text-3xl md:px-8 md:leading-10'>
-          Our goal is to provide our clients with the peace of mind that comes with knowing their property is complying with regulations or free from asbestos-containing material.
+    <p className='text-xl text-gray-600 px-2 md:text-3xl md:px-8 md:leading-10'>
+      We take pride in being the first point of contact when it comes to asbestos.
+    </p>
+    <p className='text-xl text-gray-600 px-2 md:text-3xl md:px-8 md:leading-10'>
+        Our goal is to provide our clients with the peace of mind that comes with knowing their property is complying with regulations or free from asbestos-containing material.
       </p>
     </>
   );
@@ -34,23 +37,22 @@ export default function SectionOne() {
     </>
   );
 
-  const content =
-    showFullContent ? (
-      <>
-        {firstParagraph}
-        {restOfContent}
-        <button className='text-blue-500' onClick={toggleContent}>
-          Read less
-        </button>
-      </>
-    ) : (
-      <>
-        {firstParagraph}
-        <button className='text-blue-500' onClick={toggleContent}>
-          Read more
-        </button>
-      </>
-    );
+  const content = showFullContent ? (
+    <div className="content-transition overflow-hidden transition-max-height duration-200">
+      {firstParagraph}
+      {restOfContent}
+      <button className='text-blue-500' onClick={toggleContent}>
+        Read less
+      </button>
+    </div>
+  ) : (
+    <div className="content-transition overflow-hidden transition-max-height duration-200">
+      {firstParagraph}
+      <button className='text-blue-500' onClick={toggleContent}>
+        Read more
+      </button>
+    </div>
+  );
 
   return (
     <div className='flex m-auto p-2'>
@@ -84,4 +86,6 @@ export default function SectionOne() {
       </section>
     </div>
   );
-}
+};
+
+export default SectionOne;
