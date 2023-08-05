@@ -9,10 +9,12 @@ interface SectionTwoProps {
 
 const SectionTwo: React.FC<SectionTwoProps> = () => {
   const [showFullContent, setShowFullContent] = useState(false);
+ 
 
-  const toggleContent = () => {
+  const toggleContentSectionTwo = () => {
     setShowFullContent((prev) => !prev);
   };
+
 
   const firstParagraph = (
     <>
@@ -80,14 +82,14 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {firstParagraph}
       {restOfContent}
-      <button className='text-blue-500' onClick={toggleContent}>
+      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {firstParagraph}
-      <button className='text-blue-500' onClick={toggleContent}>
+      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
         Read more
       </button>
     </div>
@@ -97,14 +99,14 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {secondParagraph}
       {secondContent}
-      <button className='text-blue-500' onClick={toggleContent}>
+      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {secondParagraph}
-      <button className='text-blue-500' onClick={toggleContent}>
+      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
         Read more
       </button>
     </div>
@@ -160,14 +162,14 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {thirdContent}
       {contentThee}
-      <button className='text-blue-500' onClick={toggleContent}>
+      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {thirdContent}
-      <button className='text-blue-500' onClick={toggleContent}>
+      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
         Read more
       </button>
     </div>
