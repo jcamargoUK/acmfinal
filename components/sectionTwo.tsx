@@ -8,8 +8,25 @@ interface SectionTwoProps {
 }
 
 const SectionTwo: React.FC<SectionTwoProps> = () => {
+  const [firstParagraphContent, setFirstParagraphContent] = useState(false);
+  const [secondParagraphContent, setSecondParagraphContent] = useState(false);
+  const [thirdParagraphContent, setThirdParagraphContent] = useState(false);
+
   const [showFullContent, setShowFullContent] = useState(false);
  
+  const toggleFirstParagraphContent = () => {
+    setFirstParagraphContent((prev) => !prev);
+  };
+
+  const toggleSecondParagraphContent = () => {
+    setSecondParagraphContent((prev) => !prev);
+  };
+
+  const toggleThirdParagraphContent = () => {
+    setThirdParagraphContent((prev) => !prev);
+  };
+  
+
 
   const toggleContentSectionTwo = () => {
     setShowFullContent((prev) => !prev);
@@ -78,35 +95,35 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     </>
   )
 
-  const content = showFullContent ? (
+  const content = firstParagraphContent ? (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {firstParagraph}
       {restOfContent}
-      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
+      <button className='text-blue-500' onClick={toggleFirstParagraphContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {firstParagraph}
-      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
+      <button className='text-blue-500' onClick={toggleFirstParagraphContent}>
         Read more
       </button>
     </div>
   );
 
-  const contentTwo = showFullContent ? (
+  const contentTwo = secondParagraphContent ? (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {secondParagraph}
       {secondContent}
-      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
+      <button className='text-blue-500' onClick={toggleSecondParagraphContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {secondParagraph}
-      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
+      <button className='text-blue-500' onClick={toggleSecondParagraphContent}>
         Read more
       </button>
     </div>
@@ -158,18 +175,18 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     </>
   )
 
-  const contentThree = showFullContent ? (
+  const contentThree = thirdParagraphContent ? (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {thirdContent}
       {contentThee}
-      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
+      <button className='text-blue-500' onClick={toggleThirdParagraphContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {thirdContent}
-      <button className='text-blue-500' onClick={toggleContentSectionTwo}>
+      <button className='text-blue-500' onClick={toggleThirdParagraphContent}>
         Read more
       </button>
     </div>
