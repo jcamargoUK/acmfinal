@@ -17,10 +17,10 @@ const SectionOne: React.FC<SectionOneProps> = () => {
 
   const firstParagraph = (
     <>
-    <p className='text-xl text-gray-600 px-2 md:text-3xl md:px-8 md:leading-10'>
+    <p className='paragraph'>
       We take pride in being the first point of contact when it comes to asbestos.
     </p>
-    <p className='text-xl text-gray-600 px-2 md:text-3xl md:px-8 md:leading-10'>
+    <p className='paragraph'>
         Our goal is to provide our clients with the peace of mind that comes with knowing their property is complying with regulations or free from asbestos-containing material.
       </p>
     </>
@@ -28,7 +28,7 @@ const SectionOne: React.FC<SectionOneProps> = () => {
 
   const restOfContent = (
     <>
-      <p className='text-xl text-gray-600 px-2 md:text-3xl md:px-8 md:leading-10'>
+      <p className='paragraph'>
         From initial inspection to final removal, we apply meticulous attention to detail and advanced techniques.
       </p>
       <p className='text-xl text-gray-600 px-2 md:text-3xl md:px-8 md:leading-10'>

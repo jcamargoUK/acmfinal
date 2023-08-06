@@ -83,12 +83,7 @@ export default function ContactSection() {
       '>
       <h1 
         className=' 
-          flex 
-          m-auto 
-          text-4xl 
-          font-bold 
-          mt-6 mb-4 
-          text-gray-600 
+        subtitles 
           '>
             Get in Touch
       </h1>
