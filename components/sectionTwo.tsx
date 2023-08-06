@@ -210,14 +210,14 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
       >
         Our Services
       </h1>
-      <div>
-        <div>
+      <div className="flex flex-col gap-1 p-4 md:flex-row md:flex-wrap m-auto w-full tex-center">
+        <div className="card">
           <h2 className="contentTitle">
             Asbestos Surveying
           </h2>
           {content}
         </div>
-        <div>
+        <div className="card">
           <h2 className="contentTitle">
             Non-Licensed Asbestos Removal
           </h2>
@@ -230,13 +230,13 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
             causing minimal disruption.
           </p>
         </div>
-        <div>
+        <div className="card">
           <h2 className="contentTitle">
             Associated Licensed Asbestos Removal
           </h2>
           {contentTwo}
         </div>
-        <div>
+        <div className="card">
           <h2 className="contentTitle">Air Monitoring</h2>
           <p
             className="paragraph"
@@ -254,11 +254,11 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
             14001, and ISO/IEC 17025:2017.
           </p>
         </div>
-        <div>
+        <div className="card">
           <h2 className="contentTitle">Soft Strip Works</h2>
           {contentThree}
         </div>
-        <div>
+        <div className="card">
           <h2 className="contentTitle">Lead Testing</h2>
           <p
             className="paragraph"
@@ -268,7 +268,7 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
             manage any potential risks effectively.
           </p>
         </div>
-        <div>
+        <div className="card">
           <h2 className="contentTitle">Anthrax Testing</h2>
           <p
             className="paragraph"
@@ -279,7 +279,7 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
             used in older buildings.
           </p>
         </div>
-        <div>
+        <div className="card">
           <h2 className="contentTitle">
             Assessment of Asbestos in Soils
           </h2>
@@ -292,7 +292,7 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
             construction or landscaping projects.
           </p>
         </div>
-        <div>
+        <div className="card">
           <h2 className="contentTitle">
             WAC Samples in Soil
           </h2>
