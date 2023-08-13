@@ -41,14 +41,14 @@ const SectionOne: React.FC<SectionOneProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {firstParagraph}
       {restOfContent}
-      <button className='text-blue-500' onClick={toggleContent}>
+      <button className='text-blue-500 ml-2 md:ml-8 mt-2 md:text-xl' onClick={toggleContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {firstParagraph}
-      <button className='text-blue-500' onClick={toggleContent}>
+      <button className='text-blue-500 ml-2 md:ml-8 mt-2 md:text-xl' onClick={toggleContent}>
         Read more
       </button>
     </div>
