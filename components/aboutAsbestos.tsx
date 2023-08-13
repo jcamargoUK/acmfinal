@@ -43,7 +43,7 @@ const AboutAsbestos = () => {
           </p>
         </div>
         <div className="card">
-          <h2 className="contentTitle">Regulations*</h2>
+          <h2 className="contentTitle">Regulations</h2>
           <p className="paragraph">
             {" "}
             Asbestos is now banned in many countries, including the UK.

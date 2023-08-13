@@ -31,53 +31,55 @@ const SectionOne: React.FC<SectionOneProps> = () => {
       <p className='paragraph'>
         From initial inspection to final removal, we apply meticulous attention to detail and advanced techniques.
       </p>
-      <p className='text-xl text-gray-600 px-2 md:text-3xl md:px-8 md:leading-10'>
+      <p className='paragraph'>
         Trust us as your strategic partner, dedicated to the safety of your property and its occupants, a commitment underpinned by our pursuit of excellence.
       </p>
     </>
   );
 
   const content = showFullContent ? (
-    <div className="content-transition overflow-hidden transition-max-height duration-200">
+    <div className="content-transition overflow-hidden transition-max-height duration-200 m-auto lg:text-2xl lg:max-w-3xl">
       {firstParagraph}
       {restOfContent}
-      <button className='text-blue-500 ml-2 md:ml-8 mt-2 md:text-xl' onClick={toggleContent}>
+      <button className='text-blue-500 ml-2 md:ml-8 mt-2 md:text-2xl lg:text-lg' onClick={toggleContent}>
         Read less
       </button>
     </div>
   ) : (
-    <div className="content-transition overflow-hidden transition-max-height duration-200">
+    <div className="content-transition overflow-hidden transition-max-height duration-200 m-auto lg:text-2xl lg:max-w-3xl">
       {firstParagraph}
-      <button className='text-blue-500 ml-2 md:ml-8 mt-2 md:text-xl' onClick={toggleContent}>
+      <button className='text-blue-500 ml-2 md:ml-8 mt-2 md:text-2xl lg:text-lg' onClick={toggleContent}>
         Read more
       </button>
     </div>
   );
 
   return (
-    <div className='flex m-auto p-2'>
-      <section>
-        <Image
-          className='m-auto md:w-1/3 md:pt-12'
-          src="/logo.svg"
-          alt="logo"
-          width="200"
-          height="200"
-        />
-        <h3 className='text-4xl text-blue-900 font-medium text-center pt-6 pb-6 md:text-6xl md:pt-12 md:pb-12'>
+    <div className='flex m-auto pt-2 px-1 text-center'>
+      <section className='m-auto'>
+        <div className='flex justify-around lg:justify-between lg:px-10'>
+          <Image
+            className='md:w-1/4 md:pt-10'
+            src="/logo.svg"
+            alt="logo"
+            width="180"
+            height="150"
+          />
+          <div className='flex flex-col text-right w-[30%] pt-3 md:flex-row md:justify-end md:w-[50%] md:pt-6 lg:w-[40%]'>
+            <p className='m-auto text-sm text-gray-600 flex gap-5 pb-2 md:text-xl lg:text-xl md:gap-2'>
+              <BsFillTelephoneFill /><a href='tel: 02036330991'>02036330991</a>
+            </p>
+            <p className='m-auto text-sm text-gray-600 flex gap-4 pb-4 md:text-xl lg:text-xl md:gap-2'>
+              <ImMobile /><a href='tel: 07340111814'>07340111814</a>
+            </p>
+          </div>
+        </div>
+        <h3 className='text-3xl text-blue-900 font-medium text-center pt-6 pb-6 md:text-5xl md:pt-12 md:pb-12 lg:px-12'>
           We take asbestos seriously, so you don&apos;t have to.
         </h3>
-        <div className='flex flex-col text-center w-[100%]'>
-          <p className='m-auto text-xl text-gray-600 flex gap-5 pb-2'>
-            <BsFillTelephoneFill /><a href='tel: 02036330991'>02036330991</a>
-          </p>
-          <p className='m-auto text-xl text-gray-600 flex gap-4 pb-4'>
-            <ImMobile /><a href='tel: 07340111814'>07340111814</a>
-          </p>
-        </div>
         {content}
         <Image
-          className='m-auto mt-6 md:w-1/2 md:pt-12'
+          className='m-auto mt-6 md:pt-12 md:w-[70%] lg:w-[50%]'
           src="/asbestos1.svg"
           alt="asbestos"
           width="300"

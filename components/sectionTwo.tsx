@@ -90,14 +90,14 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {firstParagraph}
       {restOfContent}
-      <button className="text-blue-500" onClick={toggleFirstParagraphContent}>
+      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleFirstParagraphContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {firstParagraph}
-      <button className="text-blue-500" onClick={toggleFirstParagraphContent}>
+      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleFirstParagraphContent}>
         Read more
       </button>
     </div>
@@ -107,14 +107,14 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {secondParagraph}
       {secondContent}
-      <button className="text-blue-500" onClick={toggleSecondParagraphContent}>
+      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleSecondParagraphContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {secondParagraph}
-      <button className="text-blue-500" onClick={toggleSecondParagraphContent}>
+      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleSecondParagraphContent}>
         Read more
       </button>
     </div>
@@ -166,14 +166,14 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {thirdContent}
       {contentThee}
-      <button className="text-blue-500" onClick={toggleThirdParagraphContent}>
+      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleThirdParagraphContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {thirdContent}
-      <button className="text-blue-500" onClick={toggleThirdParagraphContent}>
+      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleThirdParagraphContent}>
         Read more
       </button>
     </div>
@@ -185,7 +185,7 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
         className="subtitles">
         Our Services
       </h1>
-      <div className="flex flex-col gap-1 p-4 md:flex-row md:flex-wrap m-auto w-full tex-center">
+      <div className="flex flex-col gap-1 p-4 md:flex-row md:flex-wrap m-auto w-full tex-center md:p-2 lg:p-0">
         <div className="card">
           <h2 className="contentTitle">Asbestos Surveying</h2>
           {content}
@@ -262,7 +262,8 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
             m-auto
             mt-6
             mb-6
-            md:w-1/2
+            md:w-[70%]
+            lg:w-[50%]
             md:pt-12
             "
         src="/asbestos4.svg"

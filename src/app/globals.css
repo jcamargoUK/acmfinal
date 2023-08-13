@@ -5,12 +5,14 @@
 @layer components{
   .paragraph{
     @apply 
-    text-xl px-2 text-left
+    text-lg px-2 text-left
     m-auto
     md:text-3xl
     md:px-8
     md:leading-10
     text-gray-600
+    lg:text-center
+    lg:text-xl
   } 
   .subtitles{
     @apply 
@@ -20,10 +22,10 @@
       text-center 
       pt-6 
       pb-6 
-      md:text-6xl
+      md:text-4xl
       md:pt-12
-      md:pb-12
-      lg:text-gray-600
+      md:pb-4
+      lg:text-4xl
   }
   .contentTitle{
     @apply
@@ -32,6 +34,8 @@
     pb-4 
     pt-6
     md:text-4xl
+    md:pt-12
+    lg:text-2xl
   }
   .card{
     @apply
@@ -40,7 +44,8 @@
     mx-auto
     lg:max-w-[45%]
     xl:basis-1/3
-    xl:max-w-[30%]
+    xl:max-w-[50%]
+    xl:p-1
   }
 }
 
