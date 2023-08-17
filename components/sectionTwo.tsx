@@ -90,14 +90,14 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {firstParagraph}
       {restOfContent}
-      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleFirstParagraphContent}>
+      <button className="text-primary text-lg md:text-2xl lg:text-lg" onClick={toggleFirstParagraphContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {firstParagraph}
-      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleFirstParagraphContent}>
+      <button className="text-primary text-lg md:text-2xl lg:text-lg" onClick={toggleFirstParagraphContent}>
         Read more
       </button>
     </div>
@@ -107,14 +107,14 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {secondParagraph}
       {secondContent}
-      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleSecondParagraphContent}>
+      <button className="text-primary text-lg md:text-2xl lg:text-lg" onClick={toggleSecondParagraphContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {secondParagraph}
-      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleSecondParagraphContent}>
+      <button className="text-primary text-lg md:text-2xl lg:text-lg" onClick={toggleSecondParagraphContent}>
         Read more
       </button>
     </div>
@@ -166,26 +166,26 @@ const SectionTwo: React.FC<SectionTwoProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {thirdContent}
       {contentThee}
-      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleThirdParagraphContent}>
+      <button className="text-primary text-lg md:text-2xl lg:text-lg" onClick={toggleThirdParagraphContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200">
       {thirdContent}
-      <button className="text-blue-500 md:text-2xl lg:text-lg" onClick={toggleThirdParagraphContent}>
+      <button className="text-primary text-lg md:text-2xl lg:text-lg" onClick={toggleThirdParagraphContent}>
         Read more
       </button>
     </div>
   );
 
   return (
-    <section className="m-auto text-center">
+    <section className="m-auto text-center w-max-[80%]">
       <h1
         className="subtitles">
-        Our Services
+        <span>Our</span> Services
       </h1>
-      <div className="flex flex-col gap-1 p-4 md:flex-row md:flex-wrap m-auto w-full tex-center md:p-2 lg:p-0">
+      <div className="flex flex-col gap-8 p-2 md:flex-row md:flex-wrap m-auto w-full tex-center md:p-2 lg:p-0">
         <div className="card">
           <h2 className="contentTitle">Asbestos Surveying</h2>
           {content}

@@ -41,14 +41,14 @@ const SectionOne: React.FC<SectionOneProps> = () => {
     <div className="content-transition overflow-hidden transition-max-height duration-200 m-auto lg:text-2xl lg:max-w-3xl">
       {firstParagraph}
       {restOfContent}
-      <button className='text-blue-500 ml-2 md:ml-8 mt-2 md:text-2xl lg:text-lg' onClick={toggleContent}>
+      <button className=' text-primary text-lg ml-2 md:ml-8 mt-2 md:text-2xl lg:text-lg' onClick={toggleContent}>
         Read less
       </button>
     </div>
   ) : (
     <div className="content-transition overflow-hidden transition-max-height duration-200 m-auto lg:text-2xl lg:max-w-3xl">
       {firstParagraph}
-      <button className='text-blue-500 ml-2 md:ml-8 mt-2 md:text-2xl lg:text-lg' onClick={toggleContent}>
+      <button className=' text-primary text-lg ml-2 md:ml-8 mt-2 md:text-2xl lg:text-lg' onClick={toggleContent}>
         Read more
       </button>
     </div>
@@ -75,7 +75,7 @@ const SectionOne: React.FC<SectionOneProps> = () => {
           </div>
         </div>
         <h3 className='text-3xl text-blue-900 font-medium text-center pt-6 pb-6 md:text-5xl md:pt-12 md:pb-12 lg:px-12'>
-          We take asbestos seriously, so you don&apos;t have to.
+          <span className='text-primary'>We take</span> asbestos seriously, so you don&apos;t <span className='text-primary'>have to.</span>
         </h3>
         {content}
         <Image

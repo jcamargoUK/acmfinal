@@ -10,7 +10,7 @@ import Footer from '../../components/footer'
 
 export default function Home() {
   return(
-    <div className='bg-white'>
+    <div className=' bg-backgroud'>
       < SectionOne />
       < SectionTwo />
       < OurCommitment />

@@ -67,17 +67,15 @@ export default function ContactSection() {
   return (
     <main 
       className=' 
-      bg-lime-700/60
+      bg-secondary
       flex 
       flex-col 
       m-auto 
       text-center
-      mx-4
       mt-12
-      rounded-xl
       shadow-lg
       shadow-lime-700
-      md:w-1/2
+      md:w-2/3
       md:m-auto
       md:mt-16
       '>
@@ -98,7 +96,7 @@ export default function ContactSection() {
            text-gray-600
            mb-2
            md:text-2xl'
-          htmlFor="name">Name</label>
+          htmlFor="name"></label>
 
         <input
           className=' 
@@ -118,6 +116,7 @@ export default function ContactSection() {
           onChange={handleOnChange}
           required
           value={inputs.name}
+          
         />
         <label 
           className=' 

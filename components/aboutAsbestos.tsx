@@ -6,7 +6,7 @@ const AboutAsbestos = () => {
       <h1 className="subtitles">
         About Asbestos
       </h1>
-      <section className="flex flex-col gap-1 p-4 md:flex-row md:flex-wrap m-auto w-full tex-center">
+      <section className="flex flex-col gap-8 p-2 md:flex-row md:flex-wrap m-auto w-full tex-center">
         <div className="card"> 
           <h2 className="contentTitle">
             What is Asbestos?

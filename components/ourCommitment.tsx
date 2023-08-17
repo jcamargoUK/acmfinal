@@ -2,7 +2,7 @@
 
 const OurCommitment = () => {
   return (
-    <section className="m-auto text-center">
+    <section className="m-auto text-center ">
       <h1 className="subtitles">
         Our Commitment
       </h1>
