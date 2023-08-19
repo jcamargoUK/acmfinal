@@ -66,15 +66,15 @@ const SectionOne: React.FC<SectionOneProps> = () => {
             height="150"
           />
           <div className='flex flex-col text-right w-[30%] pt-3 md:flex-row md:justify-end md:w-[50%] md:pt-6 lg:w-[40%]'>
-            <p className='m-auto text-sm text-gray-600 flex gap-5 pb-2 md:text-xl lg:text-xl md:gap-2'>
+            <p className='m-auto text-sm text-gray flex gap-5 pb-2 md:text-xl lg:text-xl md:gap-2'>
               <BsFillTelephoneFill /><a href='tel: 02036330991'>02036330991</a>
             </p>
-            <p className='m-auto text-sm text-gray-600 flex gap-4 pb-4 md:text-xl lg:text-xl md:gap-2'>
+            <p className='m-auto text-sm text-gray flex gap-4 pb-4 md:text-xl lg:text-xl md:gap-2'>
               <ImMobile /><a href='tel: 07340111814'>07340111814</a>
             </p>
           </div>
         </div>
-        <h3 className='text-3xl text-blue-900 font-medium text-center pt-6 pb-6 md:text-5xl md:pt-12 md:pb-12 lg:px-12'>
+        <h3 className='text-3xl text-blue-900 font-medium text-center pt-6 pb-6 md:text-5xl md:pt-12 md:pb-12 lg:px-12 text-gray'>
           <span className='text-primary'>We take</span> asbestos seriously, so you don&apos;t <span className='text-primary'>have to.</span>
         </h3>
         {content}

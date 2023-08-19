@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
 // https://formspree.io/f/xeqbqlnv
 
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
 
 export default function ContactSection() {
   const [status, setStatus] = useState({
@@ -12,9 +12,9 @@ export default function ContactSection() {
     info: { error: false, msg: null },
   });
   const [inputs, setInputs] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
   const handleServerResponse = (ok, msg) => {
     if (ok) {
@@ -24,9 +24,9 @@ export default function ContactSection() {
         info: { error: false, msg: msg },
       });
       setInputs({
-        name: '',
-        email: '',
-        message: '',
+        name: "",
+        email: "",
+        message: "",
       });
     } else {
       setStatus({
@@ -50,14 +50,14 @@ export default function ContactSection() {
     e.preventDefault();
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
     axios({
-      method: 'POST',
-      url: 'https://formspree.io/xeqbqlnv',
+      method: "POST",
+      url: "https://formspree.io/xeqbqlnv",
       data: inputs,
     })
       .then((response) => {
         handleServerResponse(
           true,
-          'Thank you, your message has been submitted.',
+          <h1 className="text-xl pb-2 text-hoverbg bg-backgroundTwo">Thank you, your message has been submitted.</h1>
         );
       })
       .catch((error) => {
@@ -65,8 +65,8 @@ export default function ContactSection() {
       });
   };
   return (
-    <main 
-      className=' 
+    <main
+      className=" 
       bg-secondary
       flex 
       flex-col 
@@ -78,118 +78,134 @@ export default function ContactSection() {
       md:w-2/3
       md:m-auto
       md:mt-16
-      '>
-      <h1 
-        className=' 
-        subtitles 
-          '>
-            Talk To Us!
-      </h1>
-      <form 
-        className=' flex flex-col p-2 pt-4 md:text-2xl'
-        onSubmit={handleOnSubmit}>
-          <label 
-          className=' 
+      md:rounded-xl
+      "
+    >
+      <h1 className="text-4xl 
+      font-medium 
+      text-center 
+      pt-6 
+      pb-6 
+      md:text-4xl
+      md:pt-12
+      md:pb-4
+      lg:text-4xl text-black">Talk To Us!</h1>
+      <form
+        className=" flex flex-col p-2 pt-4 md:text-2xl"
+        onSubmit={handleOnSubmit}
+      >
+        <label
+          className=" 
           flex 
           m-auto 
           text-xl
            text-gray-600
            mb-2
-           md:text-2xl'
-          htmlFor="name"></label>
+           md:text-2xl"
+          htmlFor="name"
+        ></label>
 
         <input
-          className=' 
+          className=" 
           bg-gray-300
           text-gray-600
-          text-center
-           
+          text-left
           w-5/6 
           flex 
           m-auto 
-          p-1 
+          pt-2
+          pb-2
+          pl-2
           rounded-lg
-          mb-6'
+          mb-6"
           id="name"
           type="name"
           name="name"
           onChange={handleOnChange}
+          placeholder="Name"
           required
           value={inputs.name}
-          
         />
-        <label 
-          className=' 
+        <label
+          className=" 
           flex 
           m-auto 
           text-xl
            text-gray-600
            mb-2
-           md:text-2xl'
-          htmlFor="email">Email</label>
+           md:text-2xl"
+          htmlFor="email"
+        ></label>
         <input
-          className=' 
+          className=" 
           bg-gray-300
           text-gray-600
-          text-center
-           
+          text-left
           w-5/6 
           flex 
           m-auto 
-          p-1 
+          pt-2
+          pb-2
+          pl-2
           rounded-lg
-          mb-6'
+          mb-6"
           id="email"
           type="email"
           name="_replyto"
           onChange={handleOnChange}
+          placeholder="Email"
           required
           value={inputs.email}
         />
-        <label 
-          className=' flex m-auto text-xl text-gray-600 mb-2 md:text-2xl'
-          htmlFor="message">Message</label>
+        <label
+          className=" flex m-auto text-xl text-gray-600 mb-2 md:text-2xl"
+          htmlFor="message"
+        ></label>
         <textarea
-          className=' 
+          className=" 
             bg-gray-300
             text-gray-600
-            text-left
-             
+            text-left 
             w-5/6 
             flex 
             m-auto 
-            p-1 
+            pt-2
+            pl-2
             rounded-lg 
             pb-16 
-            mb-6'
+            mb-6"
           id="message"
           name="message"
           onChange={handleOnChange}
+          placeholder="Message..."
           required
           value={inputs.message}
         />
-        <button 
-          className=' 
+        <button
+          className=" 
             text-xl 
             w-5/6 
             m-auto 
             mb-6 
             font-bold
            text-white
-           bg-blue-500 
+           bg-blue
+           hover:bg-hoverbg
+           hover:text-hovertext
+           md:tracking-widest
            rounded-lg 
            p-2
            hover:bg-blue-700
            shadow-lg
-           shadow-blue-400'
-           
-          type="submit" 
-          disabled={status.submitting}>
+           shadow-blue-400"
+          type="submit"
+          disabled={status.submitting}
+        >
           {!status.submitting
             ? !status.submitted
-              ? 'Submit'
-              : 'Submitted'
-            : 'Submitting...'}
+              ? "Submit"
+              : "Submitted"
+            : "Submitting..."}
         </button>
       </form>
       {status.info.error && (
@@ -198,4 +214,4 @@ export default function ContactSection() {
       {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
     </main>
   );
-};
+}

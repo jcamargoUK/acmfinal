@@ -8,7 +8,7 @@ export default function Footer() {
   return(
     <section
     className=' 
-      bg-red-400/40
+      bg-footer
       shadow-lg
       shadow-red-600/90
       flex 
@@ -19,8 +19,8 @@ export default function Footer() {
       py-4
       mt-12'
     >
-     <h1 className=' flex m-auto text-2xl text-gray-600 '> Follow Us!</h1>
-     <div className=' flex m-auto text-2xl text-gray-600 space-x-10 mt-6 '>
+     <h1 className=' flex m-auto text-2xl text-gray '> Follow Us!</h1>
+     <div className=' flex m-auto text-2xl text-gray space-x-10 mt-6 '>
       < BsInstagram 
         className='w-10 h-10'
       />
@@ -31,7 +31,7 @@ export default function Footer() {
         className='w-10 h-10'
       />
      </div>
-     <div className='text-xl text-gray-600 mt-6 leading-9'>
+     <div className='text-xl text-gray mt-6 leading-9'>
       <p>ACMS Compliance</p>
       <p>3rd Floor 86-90 Paul Street</p>
       <p>London</p> 
