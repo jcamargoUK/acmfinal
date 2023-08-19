@@ -83,7 +83,7 @@ export default function ContactSection() {
         className=' 
         subtitles 
           '>
-            Get in Touch
+            Talk To Us!
       </h1>
       <form 
         className=' flex flex-col p-2 pt-4 md:text-2xl'
@@ -103,7 +103,7 @@ export default function ContactSection() {
           bg-gray-300
           text-gray-600
           text-center
-          border-2 
+           
           w-5/6 
           flex 
           m-auto 
@@ -132,7 +132,7 @@ export default function ContactSection() {
           bg-gray-300
           text-gray-600
           text-center
-          border-2 
+           
           w-5/6 
           flex 
           m-auto 
@@ -154,7 +154,7 @@ export default function ContactSection() {
             bg-gray-300
             text-gray-600
             text-left
-            border-2 
+             
             w-5/6 
             flex 
             m-auto 

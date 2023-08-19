@@ -6,7 +6,6 @@
   .paragraph{
     @apply 
     text-lg px-2 text-left
-    pb-6
     m-auto
     md:text-3xl
     md:px-8
@@ -41,6 +40,7 @@
     lg:basis-1/2 
     lg:flex-1
     mx-auto
+    md:max-w-[80%]
     rounded-md
     lg:max-w-[45%]
     xl:basis-1/3
