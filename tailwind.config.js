@@ -17,6 +17,8 @@ module.exports = {
       white: '#ffffff',
       hoverbg: '#284777',
       hovertext: '#e9679b',
+      teal: '#00796B',
+      blueGray: '#546E7A',
 
       // backgroud: '#f7ebfa',
       primary: '#216F0B',
