@@ -51,7 +51,7 @@ export default function ContactSection() {
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
     axios({
       method: "POST",
-      url: "https://formspree.io/xeqbqlnv",
+      url: NEXT_PUBLIC_API_URL,
       data: inputs,
     })
       .then((response) => {
