@@ -42,7 +42,7 @@ export default function Footer() {
      </div>
      <div>
       <p className='text-gray text-sm mt-8'>© 2023 ACMS Compliance</p>
-      <p className='text-gray text-sm mt-6 mb-2'>Design and Developed by <span className='hover:text-blue'><Link href="https://portfolio-phi-seven-34.vercel.app"><p className='hover:cursor-pointer-events-auto focus:pointer-events-auto'>Julio Camargo</p></Link></span></p>
+      <div className='text-gray text-sm mt-6 mb-2'>Design and Developed by <span className='hover:text-blue'><Link href="https://julio-camargo.vercel.app"><p className='hover:cursor-pointer-events-auto focus:pointer-events-auto'>Julio Camargo</p></Link></span></div>
      </div>
     </section>
   )
